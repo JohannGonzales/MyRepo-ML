@@ -1,0 +1,47 @@
+1)
+Let's imagine a situation: you went to the market and filled your baskets (basket1 and basket2) with fruits. You wanted to have one of each kind but realized that some fruits were put in both baskets.
+
+Task 1. Your first task is to remove everything from basket2 that is already present in basket1.
+
+Task 2. After the removal it is reasonable to anticipate that one of the baskets might weigh more compared to the another (all fruit kinds weight the same). Therefore, the second task is to transfer some fruits from a heavier basket to the lighter one to get approximately the same weight/amount of fruits.
+
+2) Storing data in a dictionary
+
+The surface you see below is called circular paraboloid:
+
+Circular Paraboloid
+It can be described by the following equation:
+x2a2+y2a2=z
+Let's set the coefficient a to 1. Therefore, the radius at each cut will be equal to z√
+
+.
+
+Your task is to create a dictionary that stores the mapping from the pair of coordinates (x,y)
+to the z coordinate (the lists storing considered ranges for x and y are given: range_x and range_y, respectively).
+
+3) You are presented with one of the earliest known encryption techniques - Caesar cipher. It is based on a simple shift of each letter in a message by a certain number of positions down the given alphabet. For example, given the English alphabet, a shift of 1 for 'xyz' would imply 'yza' and vice versa in case of decryption. Notice that 'z' becomes 'a' in this case.
+
+Thus, encryption/decryption requires two arguments: text and an integer key denoting the shift (key = 1 for the example above).
+
+Your task is to create an encryption function given the English alphabet stored in the alphabet string.
+
+4) Operations on strings
+
+You are given the variable text storing the following string 'StRing ObJeCts haVe mANy inTEResting pROPerTies'.
+
+Your task is to modify this string in such a way that would result in 'string OBJECTS have MANY interesting PROPERTIES' (every other word in text is uppercased and lowercased, otherwise). You will obtain this result in three steps.
+
+5)
+Combining iterable objects
+
+You are given the list wlist that contains lists of different words. Your task is to create a new iterable object, where each element represents a tuple. Each tuple should contain a list from the wlist, the length of this list, and the longest word within this list. If there is ambiguity in choosing the longest word, the word with the lowest index in the considered list should be taken into account. For example, given the list
+
+[
+    ['dog', 'pigeon'],
+    ['cat', 'wolf', 'seal']
+]
+
+the resulting tuples will be:
+(['dog', 'pigeon'], 2, 'pigeon')
+and
+(['cat', 'wolf', 'seal'], 3, 'wolf')
